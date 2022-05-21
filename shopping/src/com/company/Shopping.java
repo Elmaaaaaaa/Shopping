@@ -7,6 +7,8 @@ public class Shopping {
    private  boolean istrending;
     private int luckyNumber;
    private  boolean award;
+    //static method
+    private static int numberOfSales = 0; // initialization
     //constructor
     public Shopping(String typesOfClothes, double cost, boolean istrending,  int luckyNumber, boolean award){
         this.setTypesOfClothes(typesOfClothes);
@@ -14,6 +16,7 @@ public class Shopping {
         this.setIstrending(istrending);
         this.setLuckyNumber(luckyNumber);
         this.setAward(award);
+        numberOfSales++; // increment numberOfSales every time I create the Shopping object
     }
     public void setTypesOfClothes(String typesOfClothes){
         if(typesOfClothes.equals("T-shirt")|| typesOfClothes.equals("Trousers")
@@ -57,5 +60,8 @@ public class Shopping {
     }
     public boolean getAward(){
         return award;
+    }
+     public int getNumberOfSales(){
+        return numberOfSales;
     }
 }
