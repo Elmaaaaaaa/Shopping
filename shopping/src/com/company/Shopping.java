@@ -7,7 +7,7 @@ public class Shopping {
    private  boolean istrending;
     private int luckyNumber;
    private  boolean award;
-    //static method
+    //static attribute
     private static int numberOfSales = 0; // initialization
     //constructor
     public Shopping(String typesOfClothes, double cost, boolean istrending,  int luckyNumber, boolean award){
